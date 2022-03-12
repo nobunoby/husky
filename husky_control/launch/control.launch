@@ -18,6 +18,7 @@
 
   <!-- Load robot description -->
   <include file="$(find husky_description)/launch/description.launch" >
+    <!--arg name="robot_namespace" value="$(arg robot_namespace)"/-->
   </include>
 
   <!-- Load controller configuration -->
@@ -32,14 +33,16 @@
 
   <!-- Start EKF for localization -->
   <group if="$(arg enable_ekf)" >
-    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization" output="screen">
       <rosparam command="load" file="$(find husky_control)/config/localization.yaml" />
     </node>
   </group>
 
   <node pkg="interactive_marker_twist_server" type="marker_server" name="twist_marker_server" output="screen"/>
 
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <param name="tf_prefix" type="str" value="husky" />
+  </node>
 
   <node pkg="twist_mux" type="twist_mux" name="twist_mux">
     <rosparam command="load" file="$(find husky_control)/config/twist_mux.yaml" />

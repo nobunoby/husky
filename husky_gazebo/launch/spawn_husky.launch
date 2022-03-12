@@ -26,7 +26,9 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 <launch>
 
   <arg name="multimaster" default="false"/>
+  <arg name="ekf" default="true"/>
 
+  <!--arg name="robot_namespace" default="husky"/-->
   <arg name="robot_namespace" default="/"/>
 
   <arg name="x" default="0.0"/>
@@ -57,7 +59,9 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <!-- Note that husky_description/description.launch is already included in husky_control/control.launch. -->
     <group unless="$(arg multimaster)">
       <include file="$(find husky_control)/launch/control.launch">
+        <!--arg name="robot_namespace" value="$(arg robot_namespace)"/-->
         <arg name="multimaster" value="$(arg multimaster)"/>
+        <!--arg name="enable_ekf" value="$(arg ekf)"/-->
       </include>
       <include file="$(find husky_control)/launch/teleop.launch">
         <arg name="joystick" value="$(arg joystick)" />
