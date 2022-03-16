@@ -104,33 +104,61 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 
 
-
-  <joint name="platform_joint" type="fixed">
-    <origin xyz = "-0.025 0 0.305" rpy="0 0 0"/>
+<!-- tag0 -->
+  <joint name="tag0_joint" type="fixed">
+    <origin xyz = "0 0 0.26" rpy="0 0 0"/>
     <parent link="base_link" />
-    <child link="platform" />
+    <child link="tag0" />
   </joint>
 
-  <link name="platform">
+  <link name="tag0">
     <visual>
       <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
       <geometry>
-        <box size="0.5 0.5 0.01" />
+        <box size="0.06 0.06 0.01" />
       </geometry >
       <material name="Apriltag36_11_00000">
         <script>
-          <uri>file://./Apriltag36_11_00000/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00000/materials/textures</uri>
+          <uri>model://Apriltag36_11_00000/materials/scripts</uri>
+          <uri>model://Apriltag36_11_00000/materials/textures</uri>
           <name>Apriltag36_11_00000</name>
+        </script>
+        <texture filename="file://./resources/Apriltag36_11_00000/materials/scripts/Apriltag36_11_00000.material"/>
+      </material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="0.0" />
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="tag0">
+    <material>Apriltag36_11_00000</material>
+  </gazebo>
+
+
+<!-- tag1 -->
+  <joint name="tag1_joint" type="fixed">
+    <origin xyz = "0.1 0.1 0.26" rpy="0 0 0"/>
+    <parent link="base_link" />
+    <child link="tag1" />
+  </joint>
+
+  <link name="tag1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
+      <geometry>
+        <box size="0.14 0.14 0.01" />
+      </geometry >
+      <material name="Apriltag36_11_00001">
+        <script>
+          <uri>file://./resources/Apriltag36_11_00001/materials/scripts</uri>
+          <uri>file://./resources/Apriltag36_11_00001/materials/textures</uri>
+          <name>Apriltag36_11_00001</name>
         </script>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0.0 0.50 0.0"/>
-      <geometry>
-        <box size="0.3 0.4 0.01" />
-      </geometry>
-    </collision>
     <inertial>
       <origin xyz="0 0 0"/>
       <mass value="0.1" />
@@ -138,9 +166,108 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     </inertial>
   </link>
 
-  <gazebo reference="platform">
-    <material>Apriltag36_11_00000</material>
+  <gazebo reference="tag1">
+    <material>Apriltag36_11_00001</material>
   </gazebo>
+
+<!-- tag2 -->
+  <joint name="tag2_joint" type="fixed">
+    <origin xyz = "0.1 -0.1 0.26" rpy="0 0 0"/>
+    <parent link="base_link" />
+    <child link="tag2" />
+  </joint>
+
+  <link name="tag2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <geometry>
+        <box size="0.14 0.14 0.01" />
+      </geometry >
+      <material name="Apriltag36_11_00002">
+        <script>
+          <uri>model://Apriltag36_11_00002/materials/scripts</uri>
+          <uri>model://Apriltag36_11_00002/materials/textures</uri>
+          <name>Apriltag36_11_00002</name>
+        </script>
+      </material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="0.1" />
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="tag2">
+    <material>Apriltag36_11_00002</material>
+  </gazebo>
+
+<!-- tag3 -->
+  <joint name="tag3_joint" type="fixed">
+    <origin xyz = "-0.1 -0.1 0.26" rpy="0 0 0"/>
+    <parent link="base_link" />
+    <child link="tag3" />
+  </joint>
+
+  <link name="tag3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <geometry>
+        <box size="0.14 0.14 0.01" />
+      </geometry >
+      <material name="Apriltag36_11_00003">
+        <script>
+          <uri>file://./Apriltag36_11_00003/materials/scripts</uri>
+          <uri>file://./Apriltag36_11_00003/materials/textures</uri>
+          <name>Apriltag36_11_00003</name>
+        </script>
+      </material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="0.1" />
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="tag3">
+    <material>Apriltag36_11_00003</material>
+  </gazebo>
+
+
+<!-- tag4 -->
+  <joint name="tag4_joint" type="fixed">
+    <origin xyz = "-0.1 0.1 0.26" rpy="0 0 0"/>
+    <parent link="base_link" />
+    <child link="tag4" />
+  </joint>
+
+  <link name="tag4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <geometry>
+        <box size="0.14 0.14 0.01" />
+      </geometry >
+      <material name="Apriltag36_11_00004">
+        <script>
+          <uri>file://./Apriltag36_11_00004/materials/scripts</uri>
+          <uri>file://./Apriltag36_11_00004/materials/textures</uri>
+          <name>Apriltag36_11_00004</name>
+        </script>
+      </material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="0.1" />
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <gazebo reference="tag4">
+    <material>Apriltag36_11_00004</material>
+  </gazebo>
+
+
 
 
   <!-- Base footprint is on the ground under the robot -->
