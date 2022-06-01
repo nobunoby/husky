@@ -115,7 +115,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
       <geometry>
-        <box size="0.03 0.03 0.01" />
+        <box size="0.05 0.05 0.01" />
       </geometry >
       <material name="Apriltag36_11_00000">
         <script>
@@ -140,7 +140,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 <!-- tag1 -->
   <joint name="tag1_joint" type="fixed">
-    <origin xyz = "0.15 0.05 0.26" rpy="0 0 0"/>
+    <origin xyz = "0.2 0.1 0.26" rpy="0 0 0"/>
     <parent link="base_link" />
     <child link="tag1" />
   </joint>
@@ -149,7 +149,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
-        <box size="0.06 0.06 0.01" />
+        <box size="0.15 0.15 0.01" />
       </geometry >
       <material name="Apriltag36_11_00001">
         <script>
@@ -172,7 +172,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 <!-- tag2 -->
   <joint name="tag2_joint" type="fixed">
-    <origin xyz = "0.15 -0.05 0.26" rpy="0 0 0"/>
+    <origin xyz = "0.2 -0.1 0.26" rpy="0 0 0"/>
     <parent link="base_link" />
     <child link="tag2" />
   </joint>
@@ -181,7 +181,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
       <geometry>
-        <box size="0.06 0.06 0.01" />
+        <box size="0.15 0.15 0.01" />
       </geometry >
       <material name="Apriltag36_11_00002">
         <script>
@@ -204,7 +204,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 <!-- tag3 -->
   <joint name="tag3_joint" type="fixed">
-    <origin xyz = "0.05 -0.05 0.26" rpy="0 0 0"/>
+    <origin xyz = "0.0 -0.10 0.26" rpy="0 0 0"/>
     <parent link="base_link" />
     <child link="tag3" />
   </joint>
@@ -213,7 +213,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
       <geometry>
-        <box size="0.06 0.06 0.01" />
+        <box size="0.15 0.15 0.01" />
       </geometry >
       <material name="Apriltag36_11_00003">
         <script>
@@ -237,7 +237,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 <!-- tag4 -->
   <joint name="tag4_joint" type="fixed">
-    <origin xyz = "0.05 0.05 0.26" rpy="0 0 0"/>
+    <origin xyz = "0.00 0.10 0.26" rpy="0 0 0"/>
     <parent link="base_link" />
     <child link="tag4" />
   </joint>
@@ -246,7 +246,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <visual>
       <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
       <geometry>
-        <box size="0.06 0.06 0.01" />
+        <box size="0.15 0.15 0.01" />
       </geometry >
       <material name="Apriltag36_11_00004">
         <script>
@@ -265,271 +265,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <gazebo reference="tag4">
     <material>Apriltag36_11_00004</material>
-  </gazebo>
-
-
-<!-- tag5 -->
-  <joint name="tag5_joint" type="fixed">
-    <origin xyz = "0.25 0.15 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag5" />
-  </joint>
-
-  <link name="tag5">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.10 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00005">
-        <script>
-          <uri>file://./Apriltag36_11_00005/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00005/materials/textures</uri>
-          <name>Apriltag36_11_00005</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag5">
-    <material>Apriltag36_11_00005</material>
-  </gazebo>
-
-
-<!-- tag6 -->
-  <joint name="tag6_joint" type="fixed">
-    <origin xyz = "0.25 -0.15 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag6" />
-  </joint>
-
-  <link name="tag6">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.10 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00006">
-        <script>
-          <uri>file://./Apriltag36_11_00006/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00006/materials/textures</uri>
-          <name>Apriltag36_11_00006</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag6">
-    <material>Apriltag36_11_00006</material>
-  </gazebo>
-
-
-<!-- tag7 -->
-  <joint name="tag7_joint" type="fixed">
-    <origin xyz = "-0.05 -0.15 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag7" />
-  </joint>
-
-  <link name="tag7">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.10 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00007">
-        <script>
-          <uri>file://./Apriltag36_11_00007/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00007/materials/textures</uri>
-          <name>Apriltag36_11_00007</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag7">
-    <material>Apriltag36_11_00007</material>
-  </gazebo>
-
-
-
-<!-- tag8 -->
-  <joint name="tag8_joint" type="fixed">
-    <origin xyz = "-0.05 0.15 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag8" />
-  </joint>
-
-  <link name="tag8">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.1 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00008">
-        <script>
-          <uri>file://./Apriltag36_11_00008/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00008/materials/textures</uri>
-          <name>Apriltag36_11_00008</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag8">
-    <material>Apriltag36_11_00008</material>
-  </gazebo>
-
-
-  <!-- tag9 -->
-  <joint name="tag9_joint" type="fixed">
-    <origin xyz = "0.25 0.0 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag9" />
-  </joint>
-
-  <link name="tag9">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.10 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00009">
-        <script>
-          <uri>file://./Apriltag36_11_00009/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00009/materials/textures</uri>
-          <name>Apriltag36_11_00009</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag9">
-    <material>Apriltag36_11_00009</material>
-  </gazebo>
-
-
-
-<!-- tag10 -->
-  <joint name="tag10_joint" type="fixed">
-    <origin xyz = "0.1 -0.15 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag10" />
-  </joint>
-
-  <link name="tag10">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.1 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00010">
-        <script>
-          <uri>file://./Apriltag36_11_00010/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00010/materials/textures</uri>
-          <name>Apriltag36_11_00010</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag10">
-    <material>Apriltag36_11_00010</material>
-  </gazebo>
-
-
-<!-- tag11 -->
-  <joint name="tag11_joint" type="fixed">
-    <origin xyz = "-0.05 0.0 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag11" />
-  </joint>
-
-  <link name="tag11">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.11 0.1 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00011">
-        <script>
-          <uri>file://./Apriltag36_11_00011/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00011/materials/textures</uri>
-          <name>Apriltag36_11_00011</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag11">
-    <material>Apriltag36_11_00011</material>
-  </gazebo>
-
-<!-- tag12 -->
-  <joint name="tag12_joint" type="fixed">
-    <origin xyz = "0.1 0.150 0.26" rpy="0 0 0"/>
-    <parent link="base_link" />
-    <child link="tag12" />
-  </joint>
-
-  <link name="tag12">
-    <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
-      <geometry>
-        <box size="0.10 0.1 0.01" />
-      </geometry >
-      <material name="Apriltag36_11_00012">
-        <script>
-          <uri>file://./Apriltag36_11_00012/materials/scripts</uri>
-          <uri>file://./Apriltag36_11_00012/materials/textures</uri>
-          <name>Apriltag36_11_00012</name>
-        </script>
-      </material>
-    </visual>
-    <inertial>
-      <origin xyz="0 0 0"/>
-      <mass value="0.1" />
-      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
-    </inertial>
-  </link>
-
-  <gazebo reference="tag12">
-    <material>Apriltag36_11_00012</material>
   </gazebo>
 
 
