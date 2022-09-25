@@ -113,7 +113,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag0">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.03 0.03 0.01" />
       </geometry >
@@ -179,7 +179,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag2">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.06 0.06 0.01" />
       </geometry >
@@ -211,7 +211,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag3">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.06 0.06 0.01" />
       </geometry >
@@ -244,7 +244,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag4">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.06 0.06 0.01" />
       </geometry >
@@ -277,7 +277,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag5">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.10 0.01" />
       </geometry >
@@ -310,7 +310,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag6">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.10 0.01" />
       </geometry >
@@ -343,7 +343,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag7">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.10 0.01" />
       </geometry >
@@ -377,7 +377,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag8">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.1 0.01" />
       </geometry >
@@ -410,7 +410,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag9">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.10 0.01" />
       </geometry >
@@ -444,7 +444,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag10">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.1 0.01" />
       </geometry >
@@ -477,7 +477,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag11">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.11 0.1 0.01" />
       </geometry >
@@ -509,7 +509,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
   <link name="tag12">
     <visual>
-      <origin xyz="0 0 0" rpy="0.0 0.00 1.5708" />
+      <origin xyz="0 0 0" rpy="0.00 0.00 1.5708" />
       <geometry>
         <box size="0.10 0.1 0.01" />
       </geometry >
